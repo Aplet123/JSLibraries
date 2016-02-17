@@ -2,6 +2,10 @@
 =            ProcessDaJS by Un Known            =
 ===============================================*/
 
+/*----------  Log the loading to the console  ----------*/
+
+console.log("ProcessDaJS : Loading...");
+
 /*----------  Create processDaJS object for methods  ----------*/
 
 var processDaJS = {};
@@ -155,3 +159,11 @@ processDaJS.pAudio = processDaJS.playAudio;
 /*----------  Alias pAud() method as playAudio() method  ----------*/
 
 processDaJS.pAud = processDaJS.playAudio;
+
+/*----------  Log the loading to the console  ----------*/
+
+console.log("ProcessDaJS : Done loading! Ready to use!");
+
+/*----------  Insert "about"  ----------*/
+
+console.log("ProcessDaJS JS Library by Un Known");
