@@ -1,5 +1,5 @@
 #JSLibraries
-###1 Library
+###2 Libraries
 ###by Aplet123
 ##Usage Information
 ####If you want to use the **libraries**, please link them to the git:
@@ -7,4 +7,5 @@
 #Libraries
 ```
 NodeNotation
+ProcessDaJS
 ```
