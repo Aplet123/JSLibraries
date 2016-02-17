@@ -106,52 +106,52 @@ processDaJS.playAudio = function(src, start, end) {
 
 /*----------  Alias rNumber() method as randomNumber() method  ----------*/
 
-var rNumber = randomNumber;
+processDaJS.rNumber = processDaJS.randomNumber;
 
 /*----------  Alias rNum() method as randomNumber() method  ----------*/
 
-var rNum = randomNumber;
+processDaJS.rNum = processDaJS.randomNumber;
 
 /*----------  Alias rArray() method as randomArray() method  ----------*/
 
-var rArray = randomArray;
+processDaJS.rArray = processDaJS.randomArray;
 
 /*----------  Alias rArr() method as randomArray() method  ----------*/
 
-var rArr = randomArray;
+processDaJS.rArr = processDaJS.randomArray;
 
 /*----------  Alias bVariance() method as biasVariance() method  ----------*/
 
-var bVariance = biasVariance;
+processDaJS.bVariance = processDaJS.biasVariance;
 
 /*----------  Alias sSplit() method as stringSplit() method  ----------*/
 
-var sSplit = stringSplit;
+processDaJS.sSplit = processDaJS.stringSplit;
 
 /*----------  Alias sSpl() method as stringSplit() method  ----------*/
 
-var sSpl = stringSplit;
+processDaJS.sSpl = processDaJS.stringSplit;
 
 /*----------  Alias rShift() method as realShift() method  ----------*/
 
-var rShift = realShift;
+processDaJS.rShift = processDaJS.realShift;
 
 /*----------  Alias stringArray() method as stringToArray() method  ----------*/
 
-var stringArray = stringToArray;
+processDaJS.stringArray = processDaJS.stringToArray;
 
 /*----------  Alias strArray() method as stringToArray() method  ----------*/
 
-var strArray = stringToArray;
+processDaJS.strArray = processDaJS.stringToArray;
 
 /*----------  Alias strArr() method as stringToArray() method  ----------*/
 
-var strArr = stringToArray;
+processDaJS.strArr = processDaJS.stringToArray;
 
 /*----------  Alias pAudio() method as playAudio() method  ----------*/
 
-var pAudio = playAudio;
+processDaJS.pAudio = processDaJS.playAudio;
 
 /*----------  Alias pAud() method as playAudio() method  ----------*/
 
-var pAud = playAudio;
+processDaJS.pAud = processDaJS.playAudio;
