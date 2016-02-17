@@ -88,5 +88,5 @@ pAud
 Put the following script tag in your head before any other scripts.
 
 ```
-<script src="http://projectaplet.comxa.com/libraries/processDaJS.js" type="text/javascript" charset="UTF-8"></script>
+<script src="http://projectaplet.comxa.com/libraries/ProcessDaJS.js" type="text/javascript" charset="UTF-8"></script>
 ```
