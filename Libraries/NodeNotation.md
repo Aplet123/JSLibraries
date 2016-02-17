@@ -4,5 +4,5 @@ The function `node.get(name)` is used with one parameter and is used to get a no
 ##How to use NodeNotation
 Put the following script tag in your head before any other scripts.
 ```
-<script src="https://raw.githubusercontent.com/Aplet123/JSLibraries/Libraries/Libraries/NodeNotation.js" type="text/js" charset="UTF-8">
+<script src="https://raw.githubusercontent.com/Aplet123/JSLibraries/Libraries/Libraries/NodeNotation.js" type="text/js" charset="UTF-8"></script>
 ```
