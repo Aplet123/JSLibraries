@@ -77,6 +77,33 @@ processDaJS.realShift = function(array) {
     return a;
 };
 
+/*----------  Create stringToArray() method  ----------*/
+
+processDaJS.stringToArray = function(string, seperator) {
+    var comma = string.indexOf(seperator);
+    var array = [];
+    while (comma != (-1)) {
+        var string1 = string.substring(0, comma);
+        var string2 = string.substring(comma + 1);
+        string = string2;
+        array = array.concat([string1]);
+        comma = string.indexOf(",");
+    }
+    array = array.concat([string]);
+    return array;
+};
+
+/*----------  Create playAudio() method  ----------*/
+
+processDaJS.playAudio = function(src, start, end) {
+    var audio = document.createElement("audio");
+    audio.src = src;
+    audio.currentTime = start;
+    audio.autoplay = true;
+    document.body.appendChild(audio);
+    window.setTimeout(function() { document.body.removeChild(audio); }, (end - start) * 1000);
+};
+
 /*----------  Alias rNumber() method as randomNumber() method  ----------*/
 
 var rNumber = randomNumber;
@@ -108,3 +135,23 @@ var sSpl = stringSplit;
 /*----------  Alias rShift() method as realShift() method  ----------*/
 
 var rShift = realShift;
+
+/*----------  Alias stringArray() method as stringToArray() method  ----------*/
+
+var stringArray = stringToArray;
+
+/*----------  Alias strArray() method as stringToArray() method  ----------*/
+
+var strArray = stringToArray;
+
+/*----------  Alias strArr() method as stringToArray() method  ----------*/
+
+var strArr = stringToArray;
+
+/*----------  Alias pAudio() method as playAudio() method  ----------*/
+
+var pAudio = playAudio;
+
+/*----------  Alias pAud() method as playAudio() method  ----------*/
+
+var pAud = playAudio;

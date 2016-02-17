@@ -1,8 +1,17 @@
 ##Documentary for NodeNotation
-The function `node.send(name, value)` is used with two parameters and is used to send a node to the node list. The first parameter `name`, is the name of the node you want to send. The second parameter `value`, is the value of the node that you want to send.
-The function `node.get(name)` is used with one parameter and is used to get a node from the node list. The parameter `name`, is the name of the node you want to get.
+###node.send(name, value)
+Used to send a node to the node list.
+
+`name` - The name of the node.
+
+`value` - The value of the node.
+###node.get(name)
+Used to get a node from the node list.
+
+`name` - The name of the node.
 ##How to use NodeNotation
 Put the following script tag in your head before any other scripts.
+
 ```
 <script src="http://projectaplet.comxa.com/libraries/NodeNotation.js" type="text/javascript" charset="UTF-8"></script>
 ```
