@@ -20,7 +20,7 @@ processDaJS.randomNumber = function(min, max) {
 /*----------  Create processDaJS.randomArray() method  ----------*/
 
 processDaJS.randomArray = function(array) {
-    var r = randomNumber(0, array.length - 1);
+    var r = processDaJS.randomNumber(0, array.length - 1);
     return array[r];
 };
 
