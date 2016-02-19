@@ -78,7 +78,7 @@ processDaJS.median = function(array) {
         return a - b;
     });
     if (sorted.length % 2 === 0) {
-        return processDaJS.mean([sorted[sorted.length / 2], sorted[(sorted.length / 2) + 1]]);
+        return processDaJS.mean([sorted[sorted.length / 2 - 1], sorted[(sorted.length / 2)]]);
     } else {
         return sorted[(sorted.length / 2) + 0.5];
     }
