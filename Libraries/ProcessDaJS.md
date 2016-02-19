@@ -62,6 +62,17 @@ processDaJS.bStandardDeviation
 processDaJS.bStDeviation
 processDaJS.bStandardDev
 ```
+###processDaJS.gaussianNumber(mean, stDev)
+Used to generate a random number from a gaussian distribution from a given mean and standard deviation.
+
+`mean` - The mean of the gaussian distribution.
+
+`stDev` - The standard deviation of the gaussian distribution.
+####Aliases
+```
+processDaJS.gNumber
+processDaJS.gNum
+```
 ###processDaJS.median(array)
 Used to find the median of any given array.
 

@@ -71,6 +71,20 @@ processDaJS.biasStandardDeviation = function(array) {
     return Math.sqrt(processDaJS.biasVariance(array));
 };
 
+/*----------  Create processDaJS.gaussianNumber() method  ----------*/
+
+processDaJS.gaussianNumber = function(mean, stDev) {
+    window.pop = [];
+    var gaussn = 20;
+    var arr = [];
+    for (var j = 0; j < gaussn; j++) {
+        arr.push(processDaJS.randomNumber(-10000, 10000) / 10000);
+    }
+    var arrn = processDaJS.mean(arr) * arr.length;
+    arrn = arrn / 2.58 * stDev + mean;
+    return arrn;
+};
+
 /*----------  Create processDaJS.median() method  ----------*/
 
 processDaJS.median = function(array) {
@@ -185,6 +199,14 @@ processDaJS.bStDeviation = processDaJS.biasStandardDeviation;
 /*----------  Alias processDaJS.bStDev() method as processDaJS.biasStandardDeviation() method  ----------*/
 
 processDaJS.bStDev = processDaJS.biasStandardDeviation;
+
+/*----------  Alias processDaJS.gNumber() method as processDaJS.gaussianNumber() method  ----------*/
+
+processDaJS.gNumber = processDaJS.gaussianNumber;
+
+/*----------  Alias processDaJS.gNum() method as processDaJS.gaussianNumber() method  ----------*/
+
+processDaJS.gNum = processDaJS.gaussianNumber;
 
 /*----------  Alias processDaJS.arrToObject() method as processDaJS.arrayToObject() method  ----------*/
 
