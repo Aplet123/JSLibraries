@@ -98,6 +98,15 @@ processDaJS.median = function(array) {
     }
 };
 
+/*----------  Create processDaJS.range() method  ----------*/
+
+processDaJS.range = function(array) {
+    var sorted = array.sort(function(a, b) {
+        return a - b;
+    });
+    return sorted[sorted.length - 1] - sorted[0];
+};
+
 /*----------  Create processDaJS.arrayToObject() method  ----------*/
 
 processDaJS.arrayToObject = function(array) {

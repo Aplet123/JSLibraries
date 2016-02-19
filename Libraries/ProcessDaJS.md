@@ -81,6 +81,14 @@ Used to find the median of any given array.
 ```
 --==NONE==--
 ```
+###processDaJS.range(array)
+Used to find the range of any given array.
+
+`array` - The array of which to find the range of.
+####Aliases
+```
+--==NONE==--
+```
 ###processDaJS.arrayToObject(array)
 Used to convert any array to an object.
 
