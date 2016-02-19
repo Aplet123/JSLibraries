@@ -35,6 +35,13 @@ node.get = function(name) {
     return nodes[name];
 };
 
+/*----------  Create node.list() method  ----------*/
+
+node.list = function() {
+    var nodes = node.send("","",true);
+    return nodes;
+};
+
 /*----------  Log the loading to the console  ----------*/
 
 console.log("NodeNotation : Done loading! Ready to use!");

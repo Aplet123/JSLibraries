@@ -9,6 +9,8 @@ Used to send a node to the node list.
 Used to get a node from the node list.
 
 `name` - The name of the node.
+###node.list()
+Used to view the node list.
 ##How to use NodeNotation
 Put the following script tag in your head before any other scripts.
 

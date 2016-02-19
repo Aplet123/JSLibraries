@@ -7,8 +7,8 @@ Used to generate a random number from a given minimum and maximum.
 `max` - The maximum value of the number.
 ####Aliases
 ```
-rNumber
-rNum
+processDaJS.rNumber
+processDaJS.rNum
 ```
 ###processDaJS.randomArray(array)
 Used to generate a random element from a given array.
@@ -16,8 +16,8 @@ Used to generate a random element from a given array.
 `array` - The array from which to pick a random element from.
 ####Aliases
 ```
-rArray
-rArr
+processDaJS.rArray
+processDaJS.rArr
 ```
 ###processDaJS.mean(array)
 Used to find the mean of any given array.
@@ -28,9 +28,9 @@ Used to find the mean of any given array.
 --==NONE==--
 ```
 ###processDaJS.variance(array)
-Used to find the variance of any given array.
+Used to find the unbiased variance of any given array.
 
-`array` - The array of which to find the variance of.
+`array` - The array of which to find the unbiased variance of.
 ####Aliases
 ```
 --==NONE==--
@@ -41,7 +41,44 @@ Used to find the biased variance of any given array.
 `array` - The array of which to find the biased variance of.
 ####Aliases
 ```
-bVariance
+processDaJS.bVariance
+```
+###processDaJS.standardDeviation(array)
+Used to find the unbiased standard deviation of any given array.
+
+`array` - The array of which to find the unbiased standard deviation of.
+####Aliases
+```
+processDaJS.stDeviation
+processDaJS.stDev
+```
+###processDaJS.biasStandardDeviation(array)
+Used to find the biased standard deviation of any given array.
+
+`array` - The array of which to find the biased standard deviation of.
+####Aliases
+```
+processDaJS.bStandardDeviation
+processDaJS.bStDeviation
+processDaJS.bStandardDev
+```
+###processDaJS.median(array)
+Used to find the median of any given array.
+
+`array` - The array of which to find the median of.
+####Aliases
+```
+--==NONE==--
+```
+###processDaJS.arrayToObject(array)
+Used to convert any array to an object.
+
+`array` - The array of which to convert to an object.
+####Aliases
+```
+processDaJS.arrToObject
+processDaJS.arrObject
+processDaJS.arrObj
 ```
 ###processDaJS.stringSplit(string)
 Used to split a string into it's individual letters.
@@ -49,8 +86,8 @@ Used to split a string into it's individual letters.
 `string` - The string of which to split.
 ####Aliases
 ```
-sSplit
-sSpl
+processDaJS.sSplit
+processDaJS.sSpl
 ```
 ###processDaJS.realShift(array)
 Used to cycle an array.
@@ -58,7 +95,7 @@ Used to cycle an array.
 `name` - The array of which to cycle.
 ####Aliases
 ```
-rShift
+processDaJS.rShift
 ```
 ###processDaJS.stringToArray(string, seperator)
 Used to convert a string seperated by a given seperator to an array.
@@ -68,8 +105,8 @@ Used to convert a string seperated by a given seperator to an array.
 `seperator` - The seperator that is seperating the string.
 ####Aliases
 ```
-strArray
-strArr
+processDaJS.strArray
+processDaJS.strArr
 ```
 ###processDaJS.playAudio(src, start, end)
 Used to play an audio with a given source, start time, and end time.
@@ -81,8 +118,8 @@ Used to play an audio with a given source, start time, and end time.
 `end` - The end time of the audio(seconds).
 ####Aliases
 ```
-pAudio
-pAud
+processDaJS.pAudio
+processDaJS.pAud
 ```
 ##How to use processDaJS
 Put the following script tag in your head before any other scripts.
