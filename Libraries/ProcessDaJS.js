@@ -138,7 +138,7 @@ processDaJS.objectToArray = function(object, keepName) {
 
 processDaJS.stringSplit = function(string) {
     var array = [string];
-    var arrayString = array.join("");
+    var arrayString = string;
     var subsetString = "";
     for (i = 0; i < arrayString.length; i++) {
         subsetString = arrayString.substring(i, i + 1);
