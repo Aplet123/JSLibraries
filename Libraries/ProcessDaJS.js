@@ -120,6 +120,20 @@ processDaJS.arrayToObject = function(array) {
     return obj;
 };
 
+/*----------  Create processDaJS.objectToArray() method  ----------*/
+
+processDaJS.objectToArray = function(object, keepName) {
+    var arr = [];
+    var i;
+    for (i in object) {
+        if (keepName === true) {
+            arr.push(i);
+        }
+        arr.push(object[i]);
+    }
+    return arr;
+};
+
 /*----------  Create processDaJS.stringSplit() method  ----------*/
 
 processDaJS.stringSplit = function(string) {
@@ -228,6 +242,18 @@ processDaJS.arrObject = processDaJS.arrayToObject;
 /*----------  Alias processDaJS.arrObj() method as processDaJS.arrayToObject() method  ----------*/
 
 processDaJS.arrObj = processDaJS.arrayToObject;
+
+/*----------  Alias processDaJS.objToArray() method as processDaJS.objectToArray() method  ----------*/
+
+processDaJS.objToArray = processDaJS.objectToArray;
+
+/*----------  Alias processDaJS.objArray() method as processDaJS.objectToArray() method  ----------*/
+
+processDaJS.objArray = processDaJS.objectToArray;
+
+/*----------  Alias processDaJS.objArr() method as processDaJS.objectToArray() method  ----------*/
+
+processDaJS.objArr = processDaJS.arrayToObject;
 
 /*----------  Alias processDaJS.sSplit() method as processDaJS.stringSplit() method  ----------*/
 

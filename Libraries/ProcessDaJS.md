@@ -99,6 +99,18 @@ processDaJS.arrToObject
 processDaJS.arrObject
 processDaJS.arrObj
 ```
+###processDaJS.objectToArray(object, keepName)
+Used to convert any array to an object.
+
+`object` - The object of which to convert to an array.
+
+`keepName` - If the name of the elements should be kept in the array.
+####Aliases
+```
+processDaJS.objToArray
+processDaJS.objArray
+processDaJS.objArr
+```
 ###processDaJS.stringSplit(string)
 Used to split a string into it's individual letters.
 
