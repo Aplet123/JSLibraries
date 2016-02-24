@@ -4,6 +4,8 @@
 
 /*----------  Log the loading to the console  ----------*/
 
+var loadStart = new Date();
+loadStart = loadStart.getTime();
 console.log("NodeNotation : Loading...");
 
 /*----------  Create node object for get and send methods  ----------*/
@@ -14,12 +16,8 @@ var node = {};
 
 node.send = (function() {
     var nodes = {};
-    return function(name, value, noSend) { //The parameter noSend is purely there for this library, you do not have to fill it in.
-        var no = noSend;
-        if (no !== true && no !== false) {
-            no = false;
-        }
-        if (no === false) {
+    return function(name, value, noSend = false) { //The parameter noSend is purely there for this library, you do not have to fill it in.
+        if (noSend === false) {
             nodes[name] = value;
             return nodes;
         } else {
@@ -44,7 +42,9 @@ node.list = function() {
 
 /*----------  Log the loading to the console  ----------*/
 
-console.log("NodeNotation : Done loading! Ready to use!");
+var loadEnd = new Date();
+loadEnd = loadEnd.getTime();
+console.log("NodeNotation : Done loading! Ready to use! Elapsed loading time(ms): " + String(loadEnd - loadStart));
 
 /*----------  Insert "about"  ----------*/
 

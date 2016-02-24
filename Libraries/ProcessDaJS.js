@@ -4,11 +4,13 @@
 
 /*----------  Log the loading to the console  ----------*/
 
+var loadStart = new Date();
+loadStart = loadStart.getTime();
 console.log("ProcessDaJS : Loading...");
 
 /*----------  Create processDaJS.processDaJS object for methods  ----------*/
 
-var processDaJS = {};
+processDaJS = {};
 
 /*----------  Create processDaJS.randomNumber() method  ----------*/
 
@@ -289,7 +291,9 @@ processDaJS.pAud = processDaJS.playAudio;
 
 /*----------  Log the loading to the console  ----------*/
 
-console.log("ProcessDaJS : Done loading! Ready to use!");
+var loadEnd = new Date();
+loadEnd = loadEnd.getTime();
+console.log("ProcessDaJS : Done loading! Ready to use! Elapsed loading time(ms): " + String(loadEnd - loadStart));
 
 /*----------  Insert "about"  ----------*/
 
