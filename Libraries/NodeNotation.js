@@ -2,6 +2,10 @@
 =            NodeNotation by Un Known            =
 ================================================*/
 
+/*----------  Enter strict mode  ----------*/
+
+"use strict";
+
 /*----------  Log the loading to the console  ----------*/
 
 var loadStart = new Date();

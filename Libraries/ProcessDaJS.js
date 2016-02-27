@@ -2,6 +2,10 @@
 =            ProcessDaJS by Un Known            =
 ===============================================*/
 
+/*----------  Enter strict mode  ----------*/
+
+"use strict";
+
 /*----------  Log the loading to the console  ----------*/
 
 var loadStart = new Date();
@@ -140,11 +144,8 @@ processDaJS.objectToArray = function(object, keepName) {
 
 processDaJS.stringSplit = function(string) {
     var array = [string];
-    var arrayString = string;
-    var subsetString = "";
-    for (i = 0; i < arrayString.length; i++) {
-        subsetString = arrayString.substring(i, i + 1);
-        array = array.concat([subsetString]);
+    for (let value of string) {
+        array = array.concat([value]);
     }
     return array;
 };
