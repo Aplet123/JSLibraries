@@ -14,7 +14,7 @@ console.log("ProcessDaJS : Loading...");
 
 /*----------  Create processDaJS.processDaJS object for methods  ----------*/
 
-processDaJS = {};
+var processDaJS = {};
 
 /*----------  Create processDaJS.randomNumber() method  ----------*/
 
@@ -120,7 +120,7 @@ processDaJS.arrayToObject = function(array) {
     if (array.length % 2 !== 0) {
         array.push(undefined);
     }
-    for (i = 0; i < array.length; i += 2) {
+    for (var i = 0; i < array.length; i += 2) {
         obj[array[i]] = array[i + 1];
     }
     return obj;
