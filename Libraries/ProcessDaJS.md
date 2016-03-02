@@ -152,6 +152,18 @@ Used to play an audio with a given source, start time, and end time.
 processDaJS.pAudio
 processDaJS.pAud
 ```
+##Classes
+###new processDaJS.classes.Log()
+Used to create a log.
+####Properties
+`log` - The log.
+####Setters
+`log` - Adds a new log entry.
+####Methods
+--==NONE==--
+####Aliases
+```
+--==NONE==--
 ##How to use processDaJS
 Put the following script tag in your head before any other scripts.
 

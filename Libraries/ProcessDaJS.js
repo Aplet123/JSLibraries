@@ -16,6 +16,10 @@ console.log("ProcessDaJS : Loading...");
 
 var processDaJS = {};
 
+/*----------  Create processDaJS.classes object for classes  ----------*/
+
+processDaJS.classes = {};
+
 /*----------  Create processDaJS.randomNumber() method  ----------*/
 
 processDaJS.randomNumber = function(min, max) {
@@ -184,6 +188,29 @@ processDaJS.playAudio = function(src, start, end) {
     audio.autoplay = true;
     document.body.appendChild(audio);
     window.setTimeout(function() { document.body.removeChild(audio); }, (end - start) * 1000);
+};
+
+/*----------  Create processDaJS.classes.Log class  ----------*/
+
+processDaJS.classes.Log = class {
+    constructor() {
+        this.logFunc = (function() {
+            var log = [];
+            return function(value, noSend = false) {
+                if (noSend === false) {
+                    log.push(`${new Date()} : ${value}`);
+                }
+                return log;
+            };
+        })();
+    }
+    get log() {
+        return this.logFunc("", true);
+    }
+    set log(value) {
+        this.logFunc(value, false);
+    }
+
 };
 
 /*----------  Alias processDaJS.rNumber() method as processDaJS.randomNumber() method  ----------*/
