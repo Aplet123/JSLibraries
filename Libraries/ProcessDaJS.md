@@ -1,4 +1,4 @@
-##Documentary for processDaJS
+##Documentary for ProcessDaJS
 ###processDaJS.randomNumber(min, max)
 Used to generate a random number from a given minimum and maximum.
 
