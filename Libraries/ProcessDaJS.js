@@ -14,11 +14,16 @@ console.log("ProcessDaJS : Loading...");
 
 /*----------  Create processDaJS.processDaJS object for methods  ----------*/
 
-var processDaJS = {};
+const processDaJS = {};
 
 /*----------  Create processDaJS.classes object for classes  ----------*/
 
-processDaJS.classes = {};
+Object.defineProperty(processDaJS, "classes", {
+    configurable:false,
+    enumerable:false,
+    writable:false,
+    value:{}
+});
 
 /*----------  Create processDaJS.randomNumber() method  ----------*/
 

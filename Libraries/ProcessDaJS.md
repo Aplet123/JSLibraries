@@ -60,7 +60,7 @@ Used to find the biased standard deviation of any given array.
 ```
 processDaJS.bStandardDeviation
 processDaJS.bStDeviation
-processDaJS.bStandardDev
+processDaJS.bStDev
 ```
 ###processDaJS.gaussianNumber(mean, stDev)
 Used to generate a random number from a gaussian distribution from a given mean and standard deviation.
