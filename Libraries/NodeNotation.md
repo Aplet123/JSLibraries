@@ -1,4 +1,4 @@
-##Documentary for NodeNotation
+##Documentation for NodeNotation
 ###node.send(name, value)
 Used to send a node to the node list.
 
