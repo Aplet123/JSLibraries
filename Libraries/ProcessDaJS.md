@@ -152,6 +152,46 @@ Used to play an audio with a given source, start time, and end time.
 processDaJS.pAudio
 processDaJS.pAud
 ```
+###processDaJS.xor(boola, boolb)
+Used to find the xor of two booleans.
+
+`boola` - The first boolean.
+
+`boolb` - The second boolean.
+####Aliases
+```
+--==NONE==--
+```
+###processDaJS.xand(boola, boolb)
+Used to find the xand of two booleans.
+
+`boola` - The first boolean.
+
+`boolb` - The second boolean.
+####Aliases
+```
+--==NONE==--
+```
+###processDaJS.nor(boola, boolb)
+Used to find the nor of two booleans.
+
+`boola` - The first boolean.
+
+`boolb` - The second boolean.
+####Aliases
+```
+--==NONE==--
+```
+###processDaJS.nand(boola, boolb)
+Used to find the nand of two booleans.
+
+`boola` - The first boolean.
+
+`boolb` - The second boolean.
+####Aliases
+```
+--==NONE==--
+```
 ##Classes
 ###new processDaJS.classes.Log()
 Used to create a log.
@@ -161,6 +201,37 @@ Used to create a log.
 `log` - Adds a new log entry.
 ####Methods
 --==NONE==--
+####Aliases
+```
+--==NONE==--
+```
+###new processDaJS.classes.ID()
+Used to create a ID.
+####Properties
+`first` - The first name.
+
+`middle` - The middle name.
+
+`last` - The last name.
+
+`address` - The house address.
+
+`altAddress` - The optional other address.
+
+`zipCode` - The zip code.
+
+`country` - The country.
+
+`city` - The city.
+
+`email` - The email address.
+
+`phone` - The phone number.
+
+####Setters
+--==NONE==--
+####Methods
+`IDString()` - Used to find the ID string.
 ####Aliases
 ```
 --==NONE==--

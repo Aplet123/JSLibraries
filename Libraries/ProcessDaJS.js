@@ -19,10 +19,10 @@ const processDaJS = {};
 /*----------  Create processDaJS.classes object for classes  ----------*/
 
 Object.defineProperty(processDaJS, "classes", {
-    configurable:false,
-    enumerable:false,
-    writable:false,
-    value:{}
+    configurable: false,
+    enumerable: false,
+    writable: false,
+    value: {}
 });
 
 /*----------  Create processDaJS.randomNumber() method  ----------*/
@@ -195,6 +195,34 @@ processDaJS.playAudio = function(src, start, end) {
     window.setTimeout(function() { document.body.removeChild(audio); }, (end - start) * 1000);
 };
 
+/*----------  Create processDaJS.xor() method  ----------*/
+
+processDaJS.xor = function(boola, boolb) {
+    if (boola != boolb) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+/*----------  Create processDaJS.xand() method  ----------*/
+
+processDaJS.xand = function(boola, boolb) {
+    return !processDaJS.xor(boola, boolb);
+};
+
+/*----------  Create processDaJS.nor() method  ----------*/
+
+processDaJS.nor = function(boola, boolb) {
+    return !boola || !boolb;
+};
+
+/*----------  Create processDaJS.nand() method  ----------*/
+
+processDaJS.nand = function(boola, boolb) {
+    return !boola && !boolb;
+};
+
 /*----------  Create processDaJS.classes.Log class  ----------*/
 
 processDaJS.classes.Log = class {
@@ -216,6 +244,41 @@ processDaJS.classes.Log = class {
         this.logFunc(value, false);
     }
 
+};
+
+/*----------  Create processDaJS.classes.ID class  ----------*/
+
+processDaJS.classes.ID = class {
+    constructor(first, middle, last, address, altAddress, zipCode, country, city, email, phone) {
+        this.first = first;
+        this.middle = middle;
+        this.last = last;
+        this.address = address;
+        this.altAddress = altAddress;
+        this.zipCode = zipCode;
+        this.country = country;
+        this.city = city;
+        this.email = email;
+        this.phone = phone;
+    }
+    get IDString() {
+        return this.first + " " + this.middle + " " + this.last + " " + this.address + " " + this.altAddress + " " + this.zipCode + " " + this.country + " " + this.city + " " + this.email + " " + this.phone;
+    }
+    static parse(string) {
+        var array = processDaJS.stringToArray(string, " ");
+        var value = {};
+        value.first = array[0];
+        value.middle = array[1];
+        value.last = array[2];
+        value.address = array[3];
+        value.altAddress = array[4];
+        value.zipCode = array[5];
+        value.country = array[6];
+        value.city = array[7];
+        value.email = array[8];
+        value.phone = array[9];
+        return value;
+    }
 };
 
 /*----------  Alias processDaJS.rNumber() method as processDaJS.randomNumber() method  ----------*/
