@@ -277,6 +277,11 @@ processDaJS.classes.ID = class {
         value.city = array[7];
         value.email = array[8];
         value.phone = array[9];
+        Object.defineProperty(value, "IDString", {
+            get: function() {
+                return this.first + "," + this.middle + "," + this.last + "," + this.address + "," + this.altAddress + "," + this.zipCode + "," + this.country + "," + this.city + "," + this.email + "," + this.phone;
+            }
+        });
         return value;
     }
 };
