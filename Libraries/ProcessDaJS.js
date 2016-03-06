@@ -262,10 +262,10 @@ processDaJS.classes.ID = class {
         this.phone = phone;
     }
     get IDString() {
-        return this.first + " " + this.middle + " " + this.last + " " + this.address + " " + this.altAddress + " " + this.zipCode + " " + this.country + " " + this.city + " " + this.email + " " + this.phone;
+        return this.first + "," + this.middle + "," + this.last + "," + this.address + "," + this.altAddress + "," + this.zipCode + "," + this.country + "," + this.city + "," + this.email + "," + this.phone;
     }
     static parse(string) {
-        var array = processDaJS.stringToArray(string, " ");
+        var array = processDaJS.stringToArray(string, ",");
         var value = {};
         value.first = array[0];
         value.middle = array[1];
